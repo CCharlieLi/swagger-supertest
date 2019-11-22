@@ -19,6 +19,5 @@ env:
     - NODE_ENV="test"
 node_js:
   - "10"
-  - "8"
 script:
   - make test-coveralls

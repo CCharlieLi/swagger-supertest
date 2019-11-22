@@ -7,6 +7,9 @@
     "name": "Charlie Li",
     "email": "charlie@wiredcraft.com"
   },
+  "engines": {
+    "node": ">=10"
+  },
   "scripts": {
     "lint": "make lint",
     "test": "make test",
