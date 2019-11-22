@@ -1,0 +1,67 @@
+{
+  "name": "swagger-supertest",
+  "version": "0.0.2",
+  "description": "Running tests with supertest while generating swagger API specs. ",
+  "main": "lib/index.js",
+  "author": {
+    "name": "Charlie Li",
+    "email": "charlie@wiredcraft.com"
+  },
+  "scripts": {
+    "lint": "make lint",
+    "test": "make test",
+    "test-cov": "make test-cov",
+    "test-coveralls": "make test-coveralls",
+    "commitmsg": "commitlint -e $GIT_PARAMS",
+    "version": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md",
+    "precommit": "make lint",
+    "prepush": "make lint"
+  },
+  "contributors": [
+    "Charlie Li"
+  ],
+  "keywords": [
+    "swagger",
+    "api",
+    "specs",
+    "json",
+    "test",
+    "supertest",
+    "superagent",
+    "doc",
+    "generator"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CCharlieLi/swagger-supertest"
+  },
+  "bugs": {
+    "url": "https://github.com/CCharlieLi/swagger-supertest/issues"
+  },
+  "homepage": "https://github.com/CCharlieLi/swagger-supertest",
+  "license": "MIT",
+  "devDependencies": {
+    "@commitlint/cli": "^8.1.0",
+    "@commitlint/config-conventional": "^8.1.0",
+    "assert": "^2.0.0",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.4",
+    "coveralls": "^3.0.6",
+    "eslint": "^6.2.2",
+    "eslint-config-prettier": "^6.1.0",
+    "eslint-config-wcl-backend": "^0.3.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "express": "^4.17.1",
+    "husky": "^3.0.4",
+    "istanbul": "^0.4.5",
+    "mocha": "^6.2.0",
+    "nock": "^10.0.6",
+    "prettier": "^1.18.2",
+    "should": "^13.2.3"
+  },
+  "dependencies": {
+    "file-register": "^0.1.0",
+    "supertest": "^4.0.2",
+    "uuid": "^3.3.3"
+  }
+}
