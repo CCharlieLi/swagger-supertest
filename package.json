@@ -62,7 +62,6 @@
   "dependencies": {
     "data2swagger": "^0.0.2",
     "file-register": "^0.1.0",
-    "supertest": "^4.0.2",
-    "uuid": "^3.3.3"
+    "supertest": "^4.0.2"
   }
 }

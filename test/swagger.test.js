@@ -1,7 +1,6 @@
 'use strict';
 
 const request = require('../lib');
-const should = require('should');
 const express = require('express');
 
 describe('Generate swagger data', () => {
