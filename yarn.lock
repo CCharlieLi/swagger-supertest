@@ -928,10 +928,12 @@ escodegen@1.8.x:
   optionalDependencies:
     source-map "~0.2.0"
 
-eslint-config-loopback@^8.0.0:
-  version "8.0.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-loopback/-/eslint-config-loopback-8.0.0.tgz#f142bca47122994a1a85f19cc2163511616b4152"
-  integrity sha1-8UK8pHEimUoahfGcwhY1EWFrQVI=
+eslint-config-loopback@^10.0.0:
+  version "10.0.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-loopback/-/eslint-config-loopback-10.0.0.tgz#1362f3e5efc8e2c58761b40ddec280398bafe74f"
+  integrity sha512-jq00+5u2HTV5XjYxLwdvhpBvZcGVUDJBD39MwzuppUlSMsJrk4QmW4WI2DdsQcMgiORahguJbb8ucCyRSu1tCw==
+  dependencies:
+    eslint-plugin-mocha "^4.11.0"
 
 eslint-config-prettier@^6.1.0:
   version "6.7.0"
@@ -940,12 +942,12 @@ eslint-config-prettier@^6.1.0:
   dependencies:
     get-stdin "^6.0.0"
 
-eslint-config-wcl-backend@^0.3.0:
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-wcl-backend/-/eslint-config-wcl-backend-0.3.0.tgz#fcb7b95309c1118797eb29217403025e90b370be"
-  integrity sha512-mdK6oEBQV2UzEIkaqCgEDW3JcTrwaz84I2PQgXpA2AGCxLgxNWNL/YjnV7TyR4luLrmBNZlyDpIe4TJRUqoCHA==
+eslint-config-wcl-backend@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-wcl-backend/-/eslint-config-wcl-backend-0.4.0.tgz#277f53adf9b54e1059115fccfb32858ec4f9f5f1"
+  integrity sha512-F0lRyDdbEe4Ng0ITvX1WkB9MJa+Gcd+5KGz5hTrAA6XcQF1JC4iORoUWZmyEIkp4nngZxyRrjNPrfRoSlCCRVQ==
   dependencies:
-    eslint-config-loopback "^8.0.0"
+    eslint-config-loopback "^10.0.0"
     eslint-plugin-mocha-no-only "0.0.6"
 
 eslint-plugin-mocha-no-only@0.0.6:
@@ -954,6 +956,13 @@ eslint-plugin-mocha-no-only@0.0.6:
   integrity sha512-VR7NjoQBtBMbo7uQ6lV0MeICY6r6oL+1Jt3lzG7fjoMHxToAi0Lpbr0SZg37UI4D3HJfaFgjVjbyBBPKDw1kiw==
   dependencies:
     requireindex "~1.1.0"
+
+eslint-plugin-mocha@^4.11.0:
+  version "4.12.1"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-mocha/-/eslint-plugin-mocha-4.12.1.tgz#dbacc543b178b4536ec5b19d7f8e8864d85404bf"
+  integrity sha512-hxWtYHvLA0p/PKymRfDYh9Mxt5dYkg2Goy1vZDarTEEYfELP9ksga7kKG1NUKSQy27C8Qjc7YrSWTLUhOEOksA==
+  dependencies:
+    ramda "^0.25.0"
 
 eslint-plugin-prettier@^3.1.0:
   version "3.1.2"
@@ -2547,6 +2556,11 @@ quick-lru@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/quick-lru/-/quick-lru-1.1.0.tgz#4360b17c61136ad38078397ff11416e186dcfbb8"
   integrity sha1-Q2CxfGETatOAeDl/8RQW4Ybc+7g=
+
+ramda@^0.25.0:
+  version "0.25.0"
+  resolved "https://registry.yarnpkg.com/ramda/-/ramda-0.25.0.tgz#8fdf68231cffa90bc2f9460390a0cb74a29b29a9"
+  integrity sha512-GXpfrYVPwx3K7RQ6aYT8KPS8XViSXUVJT1ONhoKPE9VAleW42YE+U+8VEyGWt41EnEQW7gwecYJriTI0pKoecQ==
 
 range-parser@~1.2.1:
   version "1.2.1"
