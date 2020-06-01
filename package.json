@@ -63,7 +63,7 @@
     "should": "^13.2.3"
   },
   "dependencies": {
-    "data2swagger": "^0.0.2",
+    "data2swagger": "^0.0.3",
     "file-register": "^0.1.0",
     "supertest": "^4.0.2"
   }
