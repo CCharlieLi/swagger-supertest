@@ -1,10 +1,11 @@
 'use strict';
 
+const should = require('should');
 const request = require('../lib');
 const express = require('express');
 
 describe('Generate swagger data', () => {
-  it('should generate swagger file for POST', done => {
+  it('should generate swagger file for POST', (done) => {
     const app = express();
     app.post('/api/orders/realm1/user', (req, res) => {
       res.send({
@@ -12,9 +13,9 @@ describe('Generate swagger data', () => {
           {
             id: 'orderId',
             userName: 'charlie',
-            price: 123.45
-          }
-        ]
+            price: 123.45,
+          },
+        ],
       });
     });
 
@@ -22,8 +23,8 @@ describe('Generate swagger data', () => {
       .post('/api/orders/realm1/user?limit=1&offset=2')
       .send({
         data: {
-          userId: 'charlie-123'
-        }
+          userId: 'charlie-123',
+        },
       })
       .set('x-transaction-id', '111')
       .set('x-user-name', '222')
@@ -34,7 +35,7 @@ describe('Generate swagger data', () => {
       });
   });
 
-  it('should generate swagger file for PUT', done => {
+  it('should generate swagger file for PUT', (done) => {
     const app = express();
     app.put('/api/orders/realm1/user', (req, res) => {
       res.send({
@@ -42,9 +43,9 @@ describe('Generate swagger data', () => {
           {
             id: 'orderId',
             userName: 'charlie',
-            price: 123.45
-          }
-        ]
+            price: 123.45,
+          },
+        ],
       });
     });
 
@@ -52,8 +53,8 @@ describe('Generate swagger data', () => {
       .put('/api/orders/realm1/user?limit=1&offset=2')
       .send({
         data: {
-          userId: 'charlie-123'
-        }
+          userId: 'charlie-123',
+        },
       })
       .set('x-transaction-id', '111')
       .set('x-user-name', '222')
@@ -64,7 +65,7 @@ describe('Generate swagger data', () => {
       });
   });
 
-  it('should generate swagger file for GET', done => {
+  it('should generate swagger file for GET', (done) => {
     const app = express();
 
     app.get('/api/orders/realm1/user', (req, res) => {
@@ -73,9 +74,9 @@ describe('Generate swagger data', () => {
           {
             id: 'orderId',
             userName: 'charlie',
-            price: 123.45
-          }
-        ]
+            price: 123.45,
+          },
+        ],
       });
     });
 
