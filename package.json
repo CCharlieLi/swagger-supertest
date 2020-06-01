@@ -1,6 +1,6 @@
 {
   "name": "swagger-supertest",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Running tests with supertest while generating swagger API specs. ",
   "main": "lib/index.js",
   "author": {
