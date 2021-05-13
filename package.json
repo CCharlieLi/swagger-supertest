@@ -44,7 +44,7 @@
   "homepage": "https://github.com/CCharlieLi/swagger-supertest",
   "license": "MIT",
   "devDependencies": {
-    "@commitlint/cli": "^8.1.0",
+    "@commitlint/cli": "^12.1.4",
     "@commitlint/config-conventional": "^8.1.0",
     "assert": "^2.0.0",
     "body-parser": "^1.19.0",
